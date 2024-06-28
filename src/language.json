@@ -1,0 +1,35 @@
+[
+  {
+    "Language": "RU",
+    "Home": "ГЛАВНАЯ",
+    "Buy": "КУПИТЬ",
+    "Register": "РЕГИСТРАЦИЯ",
+    "Login": "ВХОД",
+    "About": "О НАС",
+    "Telegram": "ТЕЛЕГРАМ",
+    "Facebook": "ФЕЙСБУК"
+  },
+
+  {
+    "Language": "EN",
+    "Home": "HOME",
+    "Buy": "BUY",
+    "Register": "REGISTER",
+    "Login": "LOGIN",
+
+    "About": "ABOUT",
+    "Telegram": "TELEGRAM",
+    "Facebook": "FACEBOOK"
+  },
+  {
+    "Language": "UZ",
+    "Home": "BOSH SAHIFA",
+    "Buy": "SATISHLASH",
+    "Register": "RO'YXATDAN O'TISH",
+    "Login": "KIRISH",
+
+    "About": "BIZ HAQIMIZDA",
+    "Telegram": "TELEGRAM",
+    "Facebook": "FACEBOOK"
+  }
+]

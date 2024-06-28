@@ -1,0 +1,14 @@
+.btns{
+    background-color: transparent !important;
+    cursor: pointer;
+    margin: 0px 10px;
+    outline: none;
+    width: 160px;
+    height: 95px;
+    border: none ;
+    margin-top: 20px;
+
+}
+.d-flexbtn{
+    margin: 20px 0px;
+}

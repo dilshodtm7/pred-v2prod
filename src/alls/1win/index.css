@@ -1,0 +1,339 @@
+
+.center{
+    height: 100%;
+    color: white;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.inputs{
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.label{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+
+}
+.btn-submit{
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: #12c046;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.jets{
+    width: 200px;
+    height: 130px;
+}
+
+
+
+.list_imgs{
+    width: 350px;
+    height: 220px;
+    margin-top: 10px;
+}
+.container-avia{
+    width: 100%;
+    height: 77vh;
+    text-align: center;
+    padding-top: 0px;
+}
+
+.lucky-text{
+
+    top: 150px;
+    font-size: 60px;
+    color: #fff400;
+
+
+}
+.activation-input{
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    height: 36px;
+    font-size: 18px;
+    background-color: #fff;
+  }
+.d-block{
+    display: block !important;
+}
+.hr{
+    margin-top: 20px;
+    color: red;
+    width: 100%;
+    height: 3px;
+}
+
+
+
+.d-none{
+  display: none !important;
+}
+.reds{
+  color: red;
+    margin-bottom: 20px;
+}
+.activate{
+    color: black;
+  margin-top: 20px;
+  width: 180px;
+  height: 40px;
+  background-color:green ;
+  border-radius: 5px;
+  border: solid #fff;
+  border-width: thin;
+  font-size: 30px;
+
+}
+.activatekey{
+    color: black;
+  margin-top: 20px;
+  width: 220px;
+  height: 40px;
+  background-color:green ;
+  border-radius: 5px;
+  border: solid #fff;
+  border-width: thin;
+  font-size: 26px;
+
+}
+  .css-modal-details {
+    height: 60px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+ 
+/* Кнопка для открытия */
+.css-modal-details summary {
+    display: inline-flex;
+    margin: 10px;
+    text-decoration: none;
+    position: relative;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 12px 30px;
+    color: silver;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Roboto', Тahoma, sans-serif;
+    background: #337AB7;
+    cursor: pointer;
+    border: 2px solid #BFE2FF;
+    overflow: hidden;
+    z-index: 1;    
+}
+.css-modal-details summary:hover,
+.css-modal-details summary:active,
+.css-modal-details summary:focus {
+    color: #FFF;
+}
+.css-modal-details summary:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -50px;
+    bottom: 0;
+    left: 0;
+    border-right: 50px solid transparent;
+    border-top: 50px solid #2D6B9F;
+    transition: transform 0.5s;
+    transform: translateX(-100%);
+    z-index: -1;
+}
+.css-modal-details summary:hover:before,
+.css-modal-details summary:active:before,
+.css-modal-details summary:focus:before {
+    transform: translateX(0);
+}
+ 
+
+.css-modal-details details .cmc {
+    display:flex;
+    align-items:center;
+    justify-content:center;    
+}
+.css-modal-details details[open] .cmc {
+    pointer-events: none;
+    z-index: 4;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    animation: bg 0.5s ease;
+    background: rgba(51, 122, 183, 0.7);
+}
+ 
+/* Модальное окно */
+.css-modal-details details .cmt {
+    font-family: Verdana, sans-serif;  
+    font-size: 16px;
+    padding: 20px;
+    width:80%;
+    max-width: 600px;
+    max-height: 70%;
+    transition: 0.5s;
+    border: 6px solid #BFE2FF;
+    border-radius: 12px;
+    background: #1f2730;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2), 0 16px 20px rgba(0,0,0,0.2);
+    text-align: center;
+    overflow: auto;
+}
+.css-modal-details details[open] .cmt {
+    animation: scale 0.5s ease;
+    z-index: 4;
+    pointer-events: auto;
+}
+ 
+
+@keyframes scale {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes move {
+    0% {
+        right: -80px;
+    }
+    100% {
+        right: 20px;
+    }
+}
+@keyframes bg {
+    0% {
+        background: rgba(51, 122, 183, 0);
+    }
+    100% {
+        background: rgba(51, 122, 183, 0.7);
+    }
+}
+
+
+.loader {
+  text-align: center;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  max-width: 35rem;
+  height: 30rem;
+  margin: 0 auto;
+}
+
+.wait {
+  margin: 5rem 0;
+}
+.iata_code {
+    font-size: 6rem;
+    opacity:0.3;
+  top: 52%;
+  position: absolute;
+  color: #0099cc;
+  }
+.departure_city {
+  left: 0;
+}
+
+.arrival_city {
+  right: 1.5rem;
+}
+
+.plane {
+  position: absolute;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.plane-img {
+  -webkit-animation: spin 2.5s linear infinite;
+  -moz-animation: spin 2.5s linear infinite;
+  animation: spin 2.5s linear infinite;
+}
+
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+
+.earth-wrapper {
+  position: absolute;
+  margin: 0 auto;
+  width: 100%;
+  padding-top: 2rem;
+}
+
+
+
+@keyframes earthAnim {
+  0% {background-position-x: 0;}
+  100% {background-position-x: -340px;}
+}
+
+@media screen and (max-width: 420px) {
+  .departure_city {
+    left: 0;
+    right: 0;
+    top: 30%;
+    position: absolute;
+    margin: 0 auto;
+  }
+  
+  .arrival_city {
+    left: 0;
+    right: 0;
+    top: 93%;
+    position: absolute;
+    margin: 0 auto;
+  }
+  
+  
+}
