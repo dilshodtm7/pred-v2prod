@@ -85,7 +85,7 @@ function GetCurrentAddress() {
 
 useEffect (() => {
 if(!localStorage.getItem("country")){
-  localStorage.setItem("country", "RUS");
+  localStorage.setItem("country", "UZ");
 }
 }, []);
 
