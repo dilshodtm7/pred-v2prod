@@ -10,4 +10,24 @@
     align-items: center;
     height: 100%;
     color: white;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+.tg{
+    width: 30px;
+    height: 30px;
+}
+.btn-footer{
+    background-color: greenyellow !important;
+    border-radius: 10px;
+    border: none ;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-decoration: none;   
 }
