@@ -44,7 +44,7 @@ const Aviator = () => {
                         <input required
                             type="number" 
                             min='40000' 
-                            max='9999999' 
+                            max='999999999' 
                             onChange={(e) => setId(e.target.value)} 
                             className='inputs' 
                             placeholder="Введите Свой 1WIN ID" 
@@ -60,7 +60,7 @@ const Aviator = () => {
                         <input 
                         required
                           min='40000'
-                            max='9999999'
+                            max='999999999'
                             type="number" 
                             onChange={(e) => setId(e.target.value)} 
                             className='inputs' 
@@ -76,7 +76,7 @@ const Aviator = () => {
                         <label htmlFor="" className='label'>1WIN ID kiriting</label>
                         <input required
                             min='40000'
-                            max='9999999'
+                            max='999999999'
                             type="number" 
                             onChange={(e) => setId(e.target.value)} 
                             className='inputs' 
