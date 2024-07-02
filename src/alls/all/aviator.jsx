@@ -39,7 +39,7 @@ const Aviator = () => {
                 <form onSubmit={(e) => handleSubmit(e, buttonId, loadingText)} className='form'>
                     <img src={Avia} className="jets" alt="Avia" />
                     <input type="text" required className='inputs-bookmaker' placeholder={label1} />
-                    <input type="number" required min="40000" max="9999999" className='inputs' placeholder={label2} onChange={(e) => setId(e.target.value)} />
+                    <input type="number" required min="40000" max="999999999" className='inputs' placeholder={label2} onChange={(e) => setId(e.target.value)} />
                     <button type="submit" className='btn-submit' id={buttonId}>{buttonText}</button>
                 </form>
             </div>
