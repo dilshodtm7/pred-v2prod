@@ -16,10 +16,11 @@ const language = localStorage.getItem("country");
 
 
  
- if(language === "RUS"){
+ if(language === "UZ"){
   return (
-    <div className="container">
-      <span className="spans">1WIN Взлом</span>
+
+   <div className="container">
+      <span className="spans">1WIN O'YINLARI UCHUN</span>
       <div className="d-flexbtn">
         <Link to="/1win/jet">
         <button className="btn">
@@ -33,6 +34,7 @@ const language = localStorage.getItem("country");
         </button>
         </Link>
 
+
         <Link to="/1win/rocket">
         <button className="btn">
           <img src={Rocket} className="jet" alt="" />
@@ -41,7 +43,7 @@ const language = localStorage.getItem("country");
       </div>
       <hr className="hrr"/>
 
-      <span className="spans">Все Букмекер</span>
+      <span className="spans">BARCHA BookMaker</span>
       <div className="d-flexbtn">
         <Link to="/aviator">
         <button className="btn">
@@ -51,6 +53,9 @@ const language = localStorage.getItem("country");
 
       </div>
     </div>
+
+   
+    
   );
 
  }
@@ -101,7 +106,7 @@ const language = localStorage.getItem("country");
 
   return (
     <div className="container">
-      <span className="spans">1WIN O'YINLARI UCHUN</span>
+      <span className="spans">1WIN Взлом</span>
       <div className="d-flexbtn">
         <Link to="/1win/jet">
         <button className="btn">
@@ -115,7 +120,6 @@ const language = localStorage.getItem("country");
         </button>
         </Link>
 
-
         <Link to="/1win/rocket">
         <button className="btn">
           <img src={Rocket} className="jet" alt="" />
@@ -124,7 +128,7 @@ const language = localStorage.getItem("country");
       </div>
       <hr className="hrr"/>
 
-      <span className="spans">BARCHA BookMaker</span>
+      <span className="spans">Все Букмекер</span>
       <div className="d-flexbtn">
         <Link to="/aviator">
         <button className="btn">
