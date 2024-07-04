@@ -46,15 +46,16 @@ const Aviator = () => {
         </div>
     );
 
-    if (language === "RUS") {
-        return renderForm("Введите Свой Букмекер", "Введите Свой ID", "Вход", "btn-submit-rus", "Подождите");
+    if (language === "UZ") {
+        return renderForm("Bukmekeringizni Kiriting", "ID kiriting", "Kirish", "btn-submit-uz", "KUTING");
     }
 
     if (language === "ENG") {
         return renderForm("Enter Your BookMaker", "Enter Your ID", "Submit", "btn-submit-eng", "WAIT");
     }
 
-    return renderForm("Bukmekeringizni Kiriting", "ID kiriting", "Kirish", "btn-submit-uz", "KUTING");
+    return renderForm("Введите Свой Букмекер", "Введите Свой ID", "Вход", "btn-submit-rus", "Подождите");
+        
 };
 
 export default Aviator;
