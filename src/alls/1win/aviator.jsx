@@ -37,20 +37,22 @@ const Aviator = () => {
     return (
         <div className="container">
             <div className="center">
-                {language === "RUS" && (
-                    <form onSubmit={(e) => handleSubmit(e, "btn-a1", "Подождите")} className='form'>
+                {language === "UZ" && (
+
+            <form onSubmit={(e) => handleSubmit(e, "btn-a3", "KUTING")} className='form'>
                         <img src={Avia} className="jets" alt="Aviator" />
-                        <label htmlFor="" className='label'>Введите Свой 1WIN ID</label>
+                        <label htmlFor="" className='label'>1WIN ID kiriting</label>
                         <input required
+                            min='40000'
+                            max='999999999'
                             type="number" 
-                            min='40000' 
-                            max='999999999' 
                             onChange={(e) => setId(e.target.value)} 
                             className='inputs' 
-                            placeholder="Введите Свой 1WIN ID" 
+                            placeholder="1WIN ID kiriting" 
                         />
-                        <button type="submit" className='btn-submit' id="btn-a1">Вход</button>
+                        <button type="submit" className='btn-submit' id="btn-a3">Kirish</button>
                     </form>
+                    
                 )}
 
                 {language === "ENG" && (
@@ -70,19 +72,19 @@ const Aviator = () => {
                     </form>
                 )}
 
-                {language !== "RUS" && language !== "ENG" && (
-                    <form onSubmit={(e) => handleSubmit(e, "btn-a3", "KUTING")} className='form'>
+                {language !== "UZ" && language !== "ENG" && (
+                    <form onSubmit={(e) => handleSubmit(e, "btn-a1", "Подождите")} className='form'>
                         <img src={Avia} className="jets" alt="Aviator" />
-                        <label htmlFor="" className='label'>1WIN ID kiriting</label>
+                        <label htmlFor="" className='label'>Введите Свой 1WIN ID</label>
                         <input required
-                            min='40000'
-                            max='999999999'
                             type="number" 
+                            min='40000' 
+                            max='999999999' 
                             onChange={(e) => setId(e.target.value)} 
                             className='inputs' 
-                            placeholder="1WIN ID kiriting" 
+                            placeholder="Введите Свой 1WIN ID" 
                         />
-                        <button type="submit" className='btn-submit' id="btn-a3">Kirish</button>
+                        <button type="submit" className='btn-submit' id="btn-a1">Вход</button>
                     </form>
                 )}
             </div>
