@@ -37,7 +37,7 @@ const JetComponent = () => {
     return (
         <div className="container">
             <div className="center">
-                {language === "ZU" && (
+                {language === "UZ" && (
              <form onSubmit={(e) => handleSubmit(e, "btn-j3", "KUTING")} className='form'>
                         <img src={Jet} className="jets" alt="Jet" />
                         <label htmlFor="" className='label'>1WIN ID kiriting</label>
