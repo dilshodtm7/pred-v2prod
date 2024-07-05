@@ -100,12 +100,13 @@ if(!localStorage.getItem("country")){
         
 <div className="dd">
   {
-  localStorage.getItem("country") === "RUS" ? (
-    <span className="spans">Язык</span>
+  localStorage.getItem("country") === "UZ" ? (
+    <span className="spans">TIL</span>
+    
   ) : localStorage.getItem("country") === "ENG" ? (
     <span className="spans">Language</span>
   ) : (
-    <span className="spans">TIL</span>
+    <span className="spans">Язык</span>
   )
 }
 
