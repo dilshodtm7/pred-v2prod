@@ -38,24 +38,23 @@ const JetComponent = () => {
         <div className="container">
             <div className="center">
 
-                {language === "UZ" &&  (
-                      <form onSubmit={(e) => handleSubmit(e, "btn-j3", "KUTING")} className='form'>
+                {language === "UZ" && (
+
+            <form onSubmit={(e) => handleSubmit(e, "btn-j3", "KUTING")} className='form'>
                         <img src={Jet} className="jets" alt="Jet" />
                         <label htmlFor="" className='label'>1WIN ID kiriting</label>
                         <input required
+                            min='40000'
+                            max='999999999'
                             type="number" 
-                            min='40000' 
-                            max='999999999' 
                             onChange={(e) => setId(e.target.value)} 
                             className='inputs' 
                             placeholder="1WIN ID kiriting" 
                         />
                         <button type="submit" className='btn-submit' id="btn-j3">Kirish</button>
                     </form>
+                    
                 )}
-
-
-
                 {language === "ENG" && (
                     <form onSubmit={(e) => handleSubmit(e, "btn-j2", "WAIT")} className='form'>
                         <img src={Jet} className="jets" alt="Jet" />
