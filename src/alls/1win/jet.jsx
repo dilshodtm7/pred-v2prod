@@ -7,12 +7,24 @@ const JetComponent = () => {
     const navigate = useNavigate();
     const Api = "https://pred-v2.onrender.com/auth/sign-in";
     const [id, setId] = useState("");
+    const language = localStorage.getItem("country");
+    const [buttonText, setButtonText] = useState(getInitialButtonText());
 
-    const handleSubmit = (e, buttonId, loadingText) => {
+    function getInitialButtonText() {
+        switch (language) {
+            case "UZ":
+                return "KUTING";
+            case "ENG":
+                return "WAIT";
+            default:
+                return "Подождите"; // Assuming this is the default language
+        }
+    }
+
+    const handleSubmit = (e) => {
         e.preventDefault();
-        const button = document.getElementById(buttonId);
-        button.innerHTML = loadingText;
-        
+        setButtonText("Loading...");
+
         fetch(Api, {
             method: "POST",
             headers: {
@@ -29,66 +41,44 @@ const JetComponent = () => {
             } else {
                 navigate("/activate");
             }
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+            setButtonText(getInitialButtonText());
         });
     };
-
-    const language = localStorage.getItem("country");
 
     return (
         <div className="container">
             <div className="center">
-
-                {language === "UZ" && (
-
-            <form onSubmit={(e) => handleSubmit(e, "btn-j3", "KUTING")} className='form'>
-                        <img src={Jet} className="jets" alt="Jet" />
-                        <label htmlFor="" className='label'>1WIN ID kiriting</label>
-                        <input required
-                            min='40000'
-                            max='999999999'
-                            type="number" 
-                            onChange={(e) => setId(e.target.value)} 
-                            className='inputs' 
-                            placeholder="1WIN ID kiriting" 
-                        />
-                        <button type="submit" className='btn-submit' id="btn-j3">Kirish</button>
-                    </form>
-                    
-                )}
-                {language === "ENG" && (
-                    <form onSubmit={(e) => handleSubmit(e, "btn-j2", "WAIT")} className='form'>
-                        <img src={Jet} className="jets" alt="Jet" />
-                        <label htmlFor="" className='label'>Enter Your 1WIN ID</label>
-                        <input required
-                            type="number" 
-                            min='40000' 
-                            max='999999999' 
-                            onChange={(e) => setId(e.target.value)} 
-                            className='inputs' 
-                            placeholder="Enter Your 1WIN ID" 
-                        />
-                        <button type="submit" className='btn-submit' id="btn-j2">Submit</button>
-                    </form>
-                )}
-
-                {language !== "UZ" && language !== "ENG" && (
-                      <form onSubmit={(e) => handleSubmit(e, "btn-j1", "Подождите")} className='form'>
-                        <img src={Jet} className="jets" alt="Jet" />
-                        <label htmlFor="" className='label'>Введите Свой 1WIN ID</label>
-                        <input required
-                            type="number" 
-                            min='40000' 
-                            max='999999999' 
-                            onChange={(e) => setId(e.target.value)} 
-                            className='inputs' 
-                            placeholder="Введите Свой 1WIN ID" 
-                        />
-                        <button type="submit" className='btn-submit' id="btn-j1">Вход</button>
-                    </form>
-                )}
+                <form onSubmit={handleSubmit} className='form'>
+                    <img src={Jet} className="jets" alt="Jet" />
+                    <label className='label'>
+                        {language === "UZ" && "1WIN ID kiriting"}
+                        {language === "ENG" && "Enter Your 1WIN ID"}
+                        {(language !== "UZ" && language !== "ENG") && "Введите Свой 1WIN ID"}
+                    </label>
+                    <input
+                        required
+                        type="number"
+                        min='40000'
+                        max='999999999'
+                        onChange={(e) => setId(e.target.value)}
+                        className='inputs'
+                        placeholder={
+                            language === "UZ" ? "1WIN ID kiriting" :
+                            language === "ENG" ? "Enter Your 1WIN ID" :
+                            "Введите Свой 1WIN ID"
+                        }
+                    />
+                    <button type="submit" className='btn-submit' id="submit-btn">
+                        {buttonText}
+                    </button>
+                </form>
             </div>
         </div>
     );
 };
 
 export default JetComponent;
+;
