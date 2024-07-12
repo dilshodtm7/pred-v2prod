@@ -27,7 +27,7 @@ const Queen = () => {
                 localStorage.setItem("image", "Rocket");
                 navigate("/active");
             } else {
-                navigate("/activate");
+                navigate("/activation");
             }
         });
     };
