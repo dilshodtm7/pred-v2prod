@@ -33,12 +33,12 @@ const Aviator = () => {
         });
     };
 
-    const renderForm = (label1, label2, buttonText, buttonId, loadingText) => (
+    const renderForm = (label2, buttonText, buttonId, loadingText) => (
         <div className="container">
             <div className="center">
                 <form onSubmit={(e) => handleSubmit(e, buttonId, loadingText)} className='form'>
                     <img src={Avia} className="jets" alt="Avia" />
-                    <input type="text" required className='inputs-bookmaker' placeholder={label1} />
+                   
                     <input type="number" required min="40000" max="999999999" className='inputs' placeholder={label2} onChange={(e) => setId(e.target.value)} />
                     <button type="submit" className='btn-submit' id={buttonId}>{buttonText}</button>
                 </form>
@@ -47,14 +47,14 @@ const Aviator = () => {
     );
 
     if (language === "UZ") {
-        return renderForm("Bukmekeringizni Kiriting", "ID kiriting", "Kirish", "btn-submit-uz", "KUTING");
+        return renderForm( "ID kiriting", "Kirish", "btn-submit-uz", "KUTING");
     }
 
     if (language === "ENG") {
-        return renderForm("Enter Your BookMaker", "Enter Your ID", "Submit", "btn-submit-eng", "WAIT");
+        return renderForm("Enter Your ID", "Submit", "btn-submit-eng", "WAIT");
     }
 
-    return renderForm("Введите Свой Букмекер", "Введите Свой ID", "Вход", "btn-submit-rus", "Подождите");
+    return renderForm( "Введите Свой ID", "Вход", "btn-submit-rus", "Подождите");
         
 };
 
