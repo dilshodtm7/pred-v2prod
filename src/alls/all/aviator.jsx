@@ -38,7 +38,7 @@ const Aviator = () => {
             <div className="center">
                 <form onSubmit={(e) => handleSubmit(e, buttonId, loadingText)} className='form'>
                     <img src={Avia} className="jets" alt="Avia" />
-                   
+                   <label htmlFor="" className='label'>MELBET ID</label>
                     <input type="number" required min="40000" max="999999999" className='inputs' placeholder={label2} onChange={(e) => setId(e.target.value)} />
                     <button type="submit" className='btn-submit' id={buttonId}>{buttonText}</button>
                 </form>
