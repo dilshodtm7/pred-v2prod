@@ -43,7 +43,7 @@ const language = localStorage.getItem("country");
       </div>
       <hr className="hrr"/>
 
-      <span className="spans">BARCHA BookMaker</span>
+      <span className="spans">MELBET</span>
       <div className="d-flexbtn">
         <Link to="/aviator">
         <button className="btn">
@@ -86,7 +86,7 @@ const language = localStorage.getItem("country");
       </div>
       <hr className="hrr"/>
 
-      <span className="spans">ALL BookMaker</span>
+      <span className="spans">MELBET</span>
       <div className="d-flexbtn">
         <Link to="/aviator">
         <button className="btn">
@@ -128,7 +128,7 @@ const language = localStorage.getItem("country");
       </div>
       <hr className="hrr"/>
 
-      <span className="spans">Все Букмекер</span>
+      <span className="spans">MELBET</span>
       <div className="d-flexbtn">
         <Link to="/aviator">
         <button className="btn">
