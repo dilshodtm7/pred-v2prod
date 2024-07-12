@@ -39,7 +39,7 @@ const JetComponent = () => {
                 localStorage.setItem("image", "Jet");
                 navigate("/active");
             } else {
-                navigate("/activate");
+                window.location.href = "https://t.me/aviabot_admin";
             }
         })
         .catch((error) => {
