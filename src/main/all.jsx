@@ -8,6 +8,7 @@ import Firstavia from '../alls/1win/aviator.jsx'
 import Firstrocket from '../alls/1win/queen.jsx'
 import Aviator from '../alls/all/aviator.jsx'
 import Activate from '../register/activate.jsx'
+import Activation from '../register/activation.jsx'
 import Register1win from '../register/register1win.jsx'
 import Buy from '../buy/index.jsx'
 import  Buyorregister from '../register/buyorregister.jsx'
@@ -28,7 +29,7 @@ const all = () => {
     <Route path="/buy" element={<Buy />} />
     <Route path="/buyorregister" element={<Buyorregister />} />
     <Route path="/active" element={<Active />} />
-
+    <Route path="/activation" element={<Activation />} />
 
     
 
