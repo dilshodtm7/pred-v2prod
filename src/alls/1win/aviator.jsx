@@ -27,7 +27,7 @@ const Aviator = () => {
                 localStorage.setItem("image", "Avia");
                 navigate("/active");
             } else {
-                navigate("/activate");
+                navigate("/activation");
             }
         });
     };
